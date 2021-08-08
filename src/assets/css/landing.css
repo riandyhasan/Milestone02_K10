@@ -1,0 +1,266 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: calibri;
+}
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*background */
+.main{
+    width:100%;
+    height: 150vh;
+    background-image: url(contoh.png) ;
+    background-size: cover;
+    background-position: top left;
+}
+
+/*logo utama di pojok kiri atas*/
+.logo img{
+    height:80px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 30px;
+    background-color: #fff;
+    box-shadow: 2px 2px 20px rgba(90,118,253,0.13);
+    z-index:1;
+    width:100%;
+
+}
+
+nav ul{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+/* BUAT LINK : tentang, hubungi kami, dll.*/
+nav ul li a{
+    height:40px;
+    line-height: 43px;
+    margin: 10px;
+    padding:0px 22px;
+    display: flex;
+    font-size:0.9rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color:#111;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover{
+    background-color: orange;
+    color:#fff;
+    box-shadow: 5px 5px 20px rgb(247, 121, 4);
+    transition: all ease 0.2s;
+}
+/*----------------------------------------------------------------------------*/
+.home-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:90%;
+}
+/* LOGO UTAMA WEB --> eduka */
+.home-img{
+    width:300px;
+    height:200px;
+    margin:100px;
+}
+.home-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/*Kata-kata web*/
+.home-text{
+    width:500px;
+    margin:20px;
+}
+.home-text h1{
+    font-size: 3.5rem;
+    line-height: 55px;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin:0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.home-text p{
+    font-size: 1.2rem;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.main-login{
+    width:120px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff7113;
+    color:#fff;
+    box-shadow: 5px 10px 30px rgba(250, 51, 2, 0.911);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.main-login:hover{
+    background-color: #f32f0c;
+    transition: all ease 0.4s;
+}
+
+/* Buat contact dan konten premium */
+.timing{
+    position: absolute;
+    left:20%;
+    bottom: 10px;
+    transform: translateX(-20%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.promote,
+.office-number{
+    margin: 0px 20px;
+}
+.promote h3,
+.office-number h3{
+    font-weight: 700;
+    color:#22252e;
+    font-size: 1.6rem;
+    margin: 0px;
+}
+.office-number p,
+.promote p{
+    color:#b81111a6;
+    font-size: 1.1rem;
+}
+.promote font,
+.office-number font{
+    color:#b1140993;
+    font-weight: 700;
+}
+
+
+
+/* UNTUK SERVICES */
+/*
+.services{
+    background-image:url(keyboard.jpg);
+    background-size: 1000px;
+    background-position: center;
+} */
+.services-heading{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.services-heading h2{
+    line-height: 55px;
+    font-size: 2.8rem;
+    color:#22252e;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0px;
+}
+.services-heading p{
+    font-size: 1rem;
+    color:#777474;
+    width:50%;
+}
+.box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 30px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:500px;
+    height: 400px;
+    text-align: center;
+    box-shadow: 2px 2px 20px rgba(90,118,253,0.15);
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 20px;
+    flex-grow: 1;
+}
+.box img{
+    height:150px;
+    margin:10px;
+}
+.box font{
+    font-size: 1.5rem;
+    color: #22252e;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.box p{
+    font-size: 1rem;
+    color: #777474;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 500px;
+}
+.box a{
+    width:150px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #f5760e;
+    text-transform: uppercase;
+    margin: auto;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color:#f5760e;
+    margin:0px;
+}
+.box a:hover{
+    background-color: #f5760e;
+    color:#fff;
+    box-shadow: 5px 10px 30px rgb(255, 26, 10);
+    transition: all ease 0.3s;
+}
+
+/*footer*/
+footer{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    border-top: 2px solid rgba(167,167,167,0.2);
+    background-color: #f5760e;
+}
+footer a,
+footer p{
+    color: rgb(255, 255, 255);
+}
