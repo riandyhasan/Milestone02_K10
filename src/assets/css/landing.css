@@ -59,9 +59,9 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    background-color: orange;
+    background-color: #4A4CF6;
     color:#fff;
-    box-shadow: 5px 5px 20px rgb(247, 121, 4);
+    box-shadow: 5px 5px 20px rgb(112, 157, 241);
     transition: all ease 0.2s;
 }
 /*----------------------------------------------------------------------------*/
@@ -74,8 +74,9 @@ nav ul li a:hover{
     top:50%;
     transform: translate(-50%,-50%);
     width:90%;
+    text-align: center;
 }
-/* LOGO UTAMA WEB --> eduka */
+/* LOGO UTAMA WEB */
 .home-img{
     width:300px;
     height:200px;
@@ -96,11 +97,11 @@ nav ul li a:hover{
 .home-text h1{
     font-size: 3.5rem;
     line-height: 55px;
-    color: black;
+    color: rgb(21, 17, 226);
     letter-spacing: 1px;
     font-weight: 700;
     margin:0px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .home-text p{
     font-size: 1.2rem;
@@ -108,19 +109,20 @@ nav ul li a:hover{
     font-family: 'Courier New', Courier, monospace;
 }
 .main-login{
-    width:120px;
+    width:290px;
     height:40px;
     display: flex;
+    position: absolute;
     justify-content: center;
     align-items: center;
-    background-color: #ff7113;
+    background-color: #4A4CF6;
     color:#fff;
-    box-shadow: 5px 10px 30px rgba(250, 51, 2, 0.911);
-    text-transform: uppercase;
-    letter-spacing: 3px;
+    box-shadow: 5px 10px 30px rgba(100, 143, 224, 0.911);
+    letter-spacing: 2px;
+    border-radius: 10px;
 }
 .main-login:hover{
-    background-color: #f32f0c;
+    background-color: #072c5e;
     transition: all ease 0.4s;
 }
 
