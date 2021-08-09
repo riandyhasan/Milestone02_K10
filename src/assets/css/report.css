@@ -1,0 +1,139 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Proza Libre", sans-serif;
+    background-image: url("../img/background1.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #92B4FB;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a{
+    display: inline-block;
+    color:#4A4CF6;
+    text-align: center;
+    padding: 14px 15px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav li a:hover {
+    opacity:0.9;
+    background-color: #ffffff;
+}
+
+header h1{
+    text-align: center;
+    font-size: 3.5rem;
+    line-height: 130px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.image-report {
+    margin: 0% 4% 5% 4%;
+}
+
+.image-report h5{
+    text-align: left;
+}
+
+.image-report form{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    border: 3px dashed #8FBFFF;
+    border-radius: 15px;
+}
+
+.boxbackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 190px;
+    color: #9B9B9B;
+}
+
+.image-report form input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+}
+
+.image-report form button{
+    text-align: center;
+    color: #fff;
+    background: #4A4CF6;
+    border: none;
+    width: 120px;
+    height: 35px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border-bottom: 4px solid #2225ca;
+    transition: all .2s ease;
+    outline: none;
+}
+
+.image-report form button:hover{
+    background: #7f81f1;
+    color: #000000;
+}
+  
+.image-report form button:active{
+    border:0;
+}
+
+.link-report{
+    margin: 7% 4% 10% 4%;
+    text-align: left;
+}
+
+.link-report form input{
+    position: relative;
+    width: 85%;
+    height: 50px;
+    border: 3px solid #8FBFFF;
+    border-radius: 10px;
+}
+
+.link-report form button{
+    margin: 0;
+    color: #fff;
+    background: #4A4CF6;
+    border: none;
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    border-bottom: 4px solid #2225ca;
+    margin-left: 2%;
+    transition: all .2s ease;
+    outline: none;
+}
+
+.link-report form button:hover{
+    background: #7f81f1;
+    color: #000000;
+}
+  
+.link-report form button:active{
+    border:0;
+}
