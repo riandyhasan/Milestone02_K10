@@ -58,10 +58,33 @@ nav ul li a {
   padding: 0px 22px;
   display: flex;
   font-size: 1.1rem;
-  text-transform: uppercase;
   font-weight: 400;
   color: #4a4cf6;
   letter-spacing: 1px;
+  border-radius: 10px;
+}
+
+.download{
+  height: 40px;
+  line-height: 43px;
+  margin: 10px;
+  padding: 0px 22px;
+  display: flex;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 1px;
+  background-color: #4a4cf6;
+  border-radius: 10px;
+}
+
+.download:hover{
+  background-color: #04054d;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgb(112, 157, 241);
+  transition: all ease 0.2s;
 }
 
 nav ul li a:hover {
@@ -116,7 +139,7 @@ nav ul li a:hover {
   font-family: "Courier New", Courier, monospace;
 }
 .main-button {
-  width: 260px;
+  width: 320px;
   height: 35px;
   display: block;
   /* justify-content: center;
