@@ -18,7 +18,7 @@ a {
   width: 100%;
   height: 150vh;
   background-image: url("/assets/img/blue.png");
-  background-size: 120% 70%;
+  background-size: 120% 80%;
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -39,7 +39,7 @@ nav {
   z-index: 1;
   width: 100%;
   /* position: -webkit-sticky; /* Safari */
-  position: sticky; 
+  position: sticky; */
   top: 0;
 }
 
@@ -159,38 +159,6 @@ nav ul li a:hover {
   transition: all ease 0.4s;
 }
 
-/* Buat contact dan konten premium */
-.timing {
-  position: absolute;
-  left: 20%;
-  bottom: 10px;
-  transform: translateX(-20%);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.promote,
-.office-number {
-  margin: 0px 20px;
-}
-.promote h3,
-.office-number h3 {
-  font-weight: 700;
-  color: #22252e;
-  font-size: 1.6rem;
-  margin: 0px;
-}
-.office-number p,
-.promote p {
-  color: #b81111a6;
-  font-size: 1.1rem;
-}
-.promote font,
-.office-number font {
-  color: #b1140993;
-  font-weight: 700;
-}
-
 /* UNTUK SERVICES */
 /*
 .services{
@@ -199,13 +167,18 @@ nav ul li a:hover {
   background-position: center;
 } */
 .services-heading {
-  margin-top: 60px;
+  /* margin-top: 20px; */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
+  /* justify-content: center;*/
+  /* align-items: right; 
+  text-align: left;
+  flex-direction: column; */
 }
+.services-service{
+  flex : 50%;
+  padding : 55px;
+}
+
 .services-heading h2 {
   line-height: 55px;
   font-size: 2.8rem;
@@ -217,16 +190,72 @@ nav ul li a:hover {
 .services-heading p {
   font-size: 1rem;
   color: #777474;
-  width: 50%;
+  width: 100%;
 }
-.box-container {
+.scan-button{
+  width: 100px;
+  height: 35px;
+  display: block;
+  background-color: #4a4cf6;
+  text-align: center;
+  padding: 7.5px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+.scan-button:hover {
+  background-color: #04054d;
+  box-shadow: 5px 10px 30px rgba(100, 143, 224, 0.911);
+  transition: all ease 0.4s;
+}
+
+.col{
+  display : flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.2rem;
+  margin: auto;
+}
+
+.row{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin: 20px 30px;
 }
-.box {
+.col-4{
+  flex : 33.33%;
+  padding:20px;
+}
+
+.card {
+  text-align:center;
+}
+.card img{
+  display:inline-block;
+  width:60%;
+  margin:0 1% 0 1%;
+}
+.card-text{
+  font-size: 1.5rem;
+}
+
+
+
+.feature-1{
+  text-align: center;
+}
+
+.box-container-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 30px;
+}
+.box-bot {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -234,24 +263,20 @@ nav ul li a:hover {
   width: 500px;
   height: 400px;
   text-align: center;
-  box-shadow: 2px 2px 20px rgba(90, 118, 253, 0.15);
   border-radius: 10px;
-  background-color: #fff;
+  background-color: transparent;
   margin: 20px;
   flex-grow: 1;
 }
-.box img {
-  height: 150px;
-  margin: 10px;
-}
-.box font {
-  font-size: 1.5rem;
-  color: #22252e;
+.box-bot font {
+  font-size: 3rem;
+  color: black;
   letter-spacing: 1px;
   font-weight: 700;
 }
-.box p {
-  font-size: 1rem;
+.box-bot p {
+  margin-top: 30px;
+  font-size: 1.2rem;
   color: #777474;
   display: block;
   display: -webkit-box;
@@ -259,9 +284,9 @@ nav ul li a:hover {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 500px;
+  max-width: 700px;
 }
-.box a {
+.box-bot a {
   width: 150px;
   height: 40px;
   display: flex;
@@ -270,24 +295,18 @@ nav ul li a:hover {
   border: 2px solid #4a4cf6;
   text-transform: uppercase;
   margin: auto;
-  border-radius: 5px;
+  border-radius: 10px;
   font-weight: 600;
   font-size: 0.9rem;
   color: #4a4cf6;
   margin: 0px;
 }
-.box a:hover {
+.box-bot a:hover {
   background-color: #4a4cf6;
   color: #fff;
   box-shadow: 5px 10px 30px rgb(121, 151, 236);
   transition: all ease 0.3s;
-}
-
-  /*Section Link to report.html */
-  .LinkToReport {
-    padding-top: 5rem;
-    padding-bottom: 3rem;
-    font-size: 1.2rem;
+  border-radius: 10px;
 }
 
 /*footer*/
