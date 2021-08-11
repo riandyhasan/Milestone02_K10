@@ -45,7 +45,7 @@ nav ul li a {
     padding: 0px 22px;
     display: flex;
     font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: 400;
     color: #4a4cf6;
     letter-spacing: 1px;
     border-radius: 10px;
@@ -60,7 +60,7 @@ nav ul li a {
     display: flex;
     font-size: 1.1rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
     color: #ffffff;
     letter-spacing: 1px;
     background-color: #4a4cf6;
@@ -193,7 +193,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
     padding: 0px 5%;
     border-top: 2px solid rgba(167, 167, 167, 0.2);
     background-color: #4a4cf6;
@@ -201,5 +200,6 @@ footer {
 
 footer a,
 footer p {
+    text-decoration: none;
     color: rgb(255, 255, 255);
 }
