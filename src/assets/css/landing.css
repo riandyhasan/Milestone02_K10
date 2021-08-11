@@ -39,7 +39,7 @@ nav {
   z-index: 1;
   width: 100%;
   /* position: -webkit-sticky; /* Safari */
-  position: sticky; */
+  position: sticky; 
   top: 0;
 }
 
