@@ -10,28 +10,77 @@ body {
     text-align: center;
 }
 
+.logo img {
+    height: 80px;
+    width: 50px;
+    height: 50px;
+    text-align: left;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5px 30px;
+    background-color: #92B4FB;
+    /* box-shadow: 2px 2px 20px rgba(157, 161, 196, 0.24); */
+    z-index: 1;
+    width: 100%;
+    /* position: -webkit-sticky; /* Safari */
+    top: 0;
+}
+
 nav ul {
     list-style-type: none;
     overflow: hidden;
-    background-color: #92B4FB;
+    display: flex;
+    margin: 5px;
+    padding: 0px;
 }
 
-nav li {
-    float: right;
-}
-
-nav li a{
-    display: inline-block;
-    color:#4A4CF6;
-    text-align: center;
-    padding: 14px 15px;
-    text-decoration: none;
+nav ul li a {
+    height: 40px;
+    line-height: 43px;
+    margin: 10px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 1.1rem;
     font-weight: 700;
+    color: #4a4cf6;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    text-decoration: none;
 }
 
-nav li a:hover {
-    opacity:0.9;
-    background-color: #ffffff;
+.download{
+    height: 40px;
+    line-height: 43px;
+    margin: 10px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+    background-color: #4a4cf6;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #4a4cf6;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgb(112, 157, 241);
+    transition: all ease 0.2s;
+}
+
+.download:hover{
+    background-color: #04054d;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgb(112, 157, 241);
+    transition: all ease 0.2s;
 }
 
 header h1{
@@ -85,7 +134,7 @@ header h1{
     background: #4A4CF6;
     border: none;
     width: 120px;
-    height: 35px;
+    height: 45px;
     margin-top: 15px;
     border-radius: 10px;
     border-bottom: 4px solid #2225ca;
@@ -121,7 +170,7 @@ header h1{
     background: #4A4CF6;
     border: none;
     width: 120px;
-    height: 35px;
+    height: 45px;
     border-radius: 10px;
     border-bottom: 4px solid #2225ca;
     margin-left: 2%;
@@ -136,4 +185,21 @@ header h1{
   
 .link-report form button:active{
     border:0;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0px 5%;
+    border-top: 2px solid rgba(167, 167, 167, 0.2);
+    background-color: #4a4cf6;
+}
+
+footer a,
+footer p {
+    color: rgb(255, 255, 255);
 }
