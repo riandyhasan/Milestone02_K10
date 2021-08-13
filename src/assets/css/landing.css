@@ -22,24 +22,15 @@ a {
   background-position: top center;
   background-repeat: no-repeat;
 }
-/*logo utama di pojok kiri atas*/
-.logo img {
-  height: 80px;
-  width: 50px;
-  height: 50px;
-  text-align: left;
-}
+
 nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding: 10px 30px;
   background-color: transparent;
-  /* box-shadow: 2px 2px 20px rgba(157, 161, 196, 0.24); */
   z-index: 1;
   width: 100%;
-  /* position: -webkit-sticky; /* Safari */
-  position: sticky; */
   top: 0;
 }
 
@@ -159,20 +150,8 @@ nav ul li a:hover {
   transition: all ease 0.4s;
 }
 
-/* UNTUK SERVICES */
-/*
-.services{
-  background-image:url(keyboard.jpg);
-  background-size: 1000px;
-  background-position: center;
-} */
 .services-heading {
-  /* margin-top: 20px; */
   display: flex;
-  /* justify-content: center;*/
-  /* align-items: right; 
-  text-align: left;
-  flex-direction: column; */
 }
 .services-service{
   flex : 50%;
