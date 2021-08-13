@@ -55,7 +55,7 @@ nav ul li a {
   border-radius: 10px;
 }
 
-.download{
+.download {
   height: 40px;
   line-height: 43px;
   margin: 10px;
@@ -70,7 +70,7 @@ nav ul li a {
   border-radius: 10px;
 }
 
-.download:hover{
+.download:hover {
   background-color: #04054d;
   color: #fff;
   border-radius: 10px;
@@ -152,10 +152,12 @@ nav ul li a:hover {
 
 .services-heading {
   display: flex;
+  align-items: center;
 }
-.services-service{
-  flex : 50%;
-  padding : 55px;
+.services-service {
+  flex: 50%;
+  padding: 55px;
+  text-align: justify;
 }
 
 .services-heading h2 {
@@ -171,7 +173,7 @@ nav ul li a:hover {
   color: #777474;
   width: 100%;
 }
-.scan-button{
+.scan-button {
   width: 100px;
   height: 35px;
   display: block;
@@ -188,8 +190,8 @@ nav ul li a:hover {
   transition: all ease 0.4s;
 }
 
-.col{
-  display : flex;
+.col {
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -197,33 +199,31 @@ nav ul li a:hover {
   margin: auto;
 }
 
-.row{
+.row {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin: 20px 30px;
 }
-.col-4{
-  flex : 33.33%;
-  padding:20px;
+.col-4 {
+  flex: 33.33%;
+  padding: 20px;
 }
 
 .card {
-  text-align:center;
+  text-align: center;
 }
-.card img{
-  display:inline-block;
-  width:60%;
-  margin:0 1% 0 1%;
+.card img {
+  display: inline-block;
+  width: 60%;
+  margin: 0 1% 0 1%;
 }
-.card-text{
+.card-text {
   font-size: 1.5rem;
 }
 
-
-
-.feature-1{
+.feature-1 {
   text-align: center;
 }
 
@@ -301,4 +301,30 @@ footer {
 footer a,
 footer p {
   color: rgb(255, 255, 255);
+}
+
+/* Responsive */
+@media only screen and (max-width: 855px) {
+  .services-heading {
+    flex-direction: column;
+  }
+  .services-service {
+    padding: 0px 55px 0px 55px;
+    display: flex;
+    flex-direction: column;
+  }
+  .services-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  .services-heading {
+    flex-direction: column;
+  }
+  .services-service {
+    padding: 0px 55px 0px 55px;
+  }
 }
