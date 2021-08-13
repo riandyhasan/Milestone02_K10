@@ -133,32 +133,45 @@ header h1{
     text-align: left;
 }
 
-.image-report form{
-    position: relative;
+.drop-zone {
     width: 100%;
-    height: 250px;
+    height: 400px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    color: #9B9B9B;
     border: 3px dashed #8FBFFF;
     border-radius: 15px;
 }
 
-.boxbackground {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    line-height: 190px;
-    color: #9B9B9B;
+.drop-zone__input {
+    display: none;
 }
 
-.image-report form input{
+.drop-zone__thumb {
     width: 100%;
     height: 100%;
-    outline: none;
-    opacity: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #cccccc;
+    background-size: cover;
+    position: relative;
+}
+
+.drop-zone__thumb::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    text-align: center;
 }
 
 .image-report form button{
@@ -191,6 +204,7 @@ header h1{
 }
 
 .link-report form input{
+    float: left;
     position: relative;
     width: 85%;
     height: 50px;
@@ -199,6 +213,7 @@ header h1{
 }
 
 .link-report form button{
+    float: right;
     margin: 0;
     color: #fff;
     background: #4A4CF6;
@@ -206,7 +221,6 @@ header h1{
     width: 120px;
     height: 45px;
     border-radius: 10px;
-    margin-left: 2%;
     transition: all .2s ease;
     outline: none;
 }
