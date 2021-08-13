@@ -1,25 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
 
     <!-- My CSS -->
     <link rel="stylesheet" href="assets/css/report.css" />
 
-    <!-- Fonts -->
     <link rel="shortcut icon" href="#" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Proza+Libre:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    
+    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:wght@500;600;700&display=swap" rel="stylesheet" />
+
     <title>Report Hoax</title>
   </head>
 
@@ -27,8 +23,8 @@
     <!-- Navigation Bar -->
     <nav>
       <ul>
-        <li><a href="landing.html">Home</a></li>
-        <li><a href="#">Scan</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="scan.html">Scan</a></li>
         <li><a href="report.html">Report</a></li>
         <li><a href="#" class="download">Download</a></li>
       </ul>
@@ -39,41 +35,28 @@
       <h1>Report Hoax</h1>
     </header>
 
-    <!-- Cara kerja -->
-    <br><br>
-    
-    <div class="description">
-      <div class="description-img">
-      <img src="assets\img\gambar4.png" alt=""> 
-      </div>
-      <div class="container">
-      <p> <strong> Bagaimana cara kerja Hoax Slayer? </strong> <br><br><br>
-      Cara kerja Hoax Slayer cukup simpel, pengguna tinggal menginput teks atau gambar yang ingin pengguna periksa validitasnya. Nanti akan muncul pemberitahuan hasil scan. Hoax slayer menggunakan API dari <a href="https://www.detax.org/"> Detax</a>. Hasil yang akan ditampilkan diklasifikasikan menjadi hoax, fakta, atau malinformation.</p>
-      </div>
-    </div>
-    
     <!-- Report Gambar -->
     <div class="image-report">
-      <h5><strong>Laporkan gambar</strong></h5><br>
+      <h5><strong>Laporkan gambar</strong></h5>
+      <br />
       <form action="upload.php" method="POST">
-        <div class="drop-zone">
-          <div class="drop-zone__prompt">Drop file here or click to upload</div>
-          <input type="file" multiple name="imagereport" class="drop-zone__input">
-        </div>
+        <input type="file" multiple />
+        <div class="boxbackground">Drag and drop / click to upload</div>
         <button type="submit">Report</button>
       </form>
     </div>
-  
+
     <!-- Report Link -->
     <div class="link-report">
       <form action="/action_page.php">
-        <label for="linkreport"><h5><strong>Laporkan artikel atau akun</strong></h5></label><br><br>
-        <input type="url" id="linkreport" name="linkreport" placeholder="Input direct link to article or profile account">
+        <label for="linkreport"
+          ><h5><strong>Laporkan artikel atau akun</strong></h5></label
+        ><br /><br />
+        <input type="url" id="linkreport" name="linkreport" placeholder="Input direct link to article or profile account" />
         <button type="submit">Report</button>
       </form>
     </div>
-    
-    <script src="assets/js/report.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   </body>
 

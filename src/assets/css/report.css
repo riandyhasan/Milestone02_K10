@@ -1,253 +1,233 @@
 body {
-    padding: 0;
-    margin: 0;
-    font-family: "Proza Libre", sans-serif;
-    background-image: url("../img/background1.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: "Proza Libre", sans-serif;
+  background-image: url("../img/background1.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
 }
 
 .logo img {
-    height: 80px;
-    width: 50px;
-    height: 50px;
-    text-align: left;
-}
-
-/* How it works */ 
-.description {
-    display:inline-flex;
-    color: #000000;
-}
-
-.description-img img {
-    width: 445px;
-    height: 445px;
-    padding: 20px 20px 20px 20px;
-} 
-
-.container {
-
-    font-family: Proza Libre;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    text-align: justify;
-    padding-right: 40px;
-    align-content: flex-start;
-
-    color: #000000;
-}
-
-.description strong {
-    font-size: 36px;
-    font-weight: 700;
+  height: 80px;
+  width: 50px;
+  height: 50px;
+  text-align: left;
 }
 
 /* Navigation Bar */
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 5px 30px;
-    background-color: #92B4FB;
-    /* box-shadow: 2px 2px 20px rgba(157, 161, 196, 0.24); */
-    z-index: 1;
-    width: 100%;
-    /* position: -webkit-sticky; /* Safari */
-    top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5px 30px;
+  background-color: #92b4fb;
+  /* box-shadow: 2px 2px 20px rgba(157, 161, 196, 0.24); */
+  z-index: 1;
+  width: 100%;
+  /* position: -webkit-sticky; /* Safari */
+  top: 0;
 }
 
 nav ul {
-    list-style-type: none;
-    overflow: hidden;
-    display: flex;
-    margin: 5px;
-    padding: 0px;
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  margin: 5px;
+  padding: 0px;
 }
 
 nav ul li a {
-    height: 40px;
-    line-height: 43px;
-    margin: 10px;
-    padding: 0px 22px;
-    display: flex;
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: #4a4cf6;
-    letter-spacing: 1px;
-    border-radius: 10px;
-    text-decoration: none;
+  height: 40px;
+  line-height: 43px;
+  margin: 10px;
+  padding: 0px 22px;
+  display: flex;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #4a4cf6;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
-.download{
-    height: 40px;
-    line-height: 43px;
-    margin: 10px;
-    padding: 0px 22px;
-    display: flex;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: #ffffff;
-    letter-spacing: 1px;
-    background-color: #4a4cf6;
-    border-radius: 10px;
+.download {
+  height: 40px;
+  line-height: 43px;
+  margin: 10px;
+  padding: 0px 22px;
+  display: flex;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 1px;
+  background-color: #4a4cf6;
+  border-radius: 10px;
 }
 
 nav ul li a:hover {
-    background-color: #4a4cf6;
-    color: #fff;
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px rgb(112, 157, 241);
-    transition: all ease 0.2s;
+  background-color: #4a4cf6;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgb(112, 157, 241);
+  transition: all ease 0.2s;
 }
 
-.download:hover{
-    background-color: #04054d;
-    color: #fff;
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px rgb(112, 157, 241);
-    transition: all ease 0.2s;
+.download:hover {
+  background-color: #04054d;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgb(112, 157, 241);
+  transition: all ease 0.2s;
 }
 
 /* Judul */
-header h1{
-    text-align: center;
-    font-size: 3.5rem;
-    line-height: 130px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    margin-bottom: 10px;
+header h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  line-height: 130px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 /* Report Gambar */
 .image-report {
-    margin: 0% 4% 5% 4%;
+  margin: 0% 4% 5% 4%;
 }
 
-.image-report h5{
-    text-align: left;
+.image-report h5 {
+  text-align: left;
 }
 
-.drop-zone {
-    width: 100%;
-    height: 400px;
-    padding: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    cursor: pointer;
-    color: #9B9B9B;
-    border: 3px dashed #8FBFFF;
-    border-radius: 15px;
+.image-report form {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border: 3px dashed #8fbfff;
+  border-radius: 15px;
 }
 
-.drop-zone__input {
-    display: none;
+.boxbackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 190px;
+  color: #9b9b9b;
 }
 
-.drop-zone__thumb {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #cccccc;
-    background-size: cover;
-    position: relative;
+.image-report form input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
 }
 
-.drop-zone__thumb::after {
-    content: attr(data-label);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 5px 0;
-    color: #ffffff;
-    background: rgba(0, 0, 0, 0.75);
-    font-size: 14px;
-    text-align: center;
+.image-report form button {
+  text-align: center;
+  color: #fff;
+  background: #4a4cf6;
+  border: none;
+  width: 120px;
+  height: 45px;
+  margin-top: 15px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  outline: none;
 }
 
-.image-report form button{
-    text-align: center;
-    color: #fff;
-    background: #4A4CF6;
-    border: none;
-    width: 120px;
-    height: 45px;
-    margin-top: 15px;
-    border-radius: 10px;
-    transition: all .2s ease;
-    outline: none;
+.image-report form button:hover {
+  background: #04054d;
+  box-shadow: 5px 10px 30px rgba(100, 143, 224, 0.911);
+  transition: all ease 0.4s;
 }
 
-.image-report form button:hover{
-    background: #04054d;
-    box-shadow: 5px 10px 30px rgba(100, 143, 224, 0.911);
-    transition: all ease 0.4s;
-}
-  
-.image-report form button:active{
-    border:0;
+.image-report form button:active {
+  border: 0;
 }
 
 /* Report link 8 */
-.link-report{
-    margin: 7% 4% 10% 4%;
-    text-align: left;
+.link-report {
+  margin: 7% 4% 10% 4%;
+  text-align: left;
 }
 
-.link-report form input{
-    float: left;
-    position: relative;
-    width: 85%;
-    height: 50px;
-    border: 3px solid #8FBFFF;
-    border-radius: 10px;
+.link-report form input {
+  position: relative;
+  width: 85%;
+  height: 50px;
+  border: 3px solid #8fbfff;
+  border-radius: 10px;
+  padding: 0% 0% 0% 1%;
 }
 
-.link-report form button{
-    float: right;
-    margin: 0;
-    color: #fff;
-    background: #4A4CF6;
-    border: none;
-    width: 120px;
-    height: 45px;
-    border-radius: 10px;
-    transition: all .2s ease;
-    outline: none;
+.link-report form button {
+  margin: 0;
+  color: #fff;
+  background: #4a4cf6;
+  border: none;
+  width: 120px;
+  height: 45px;
+  border-radius: 10px;
+  margin-left: 2%;
+  transition: all 0.2s ease;
+  outline: none;
 }
 
-.link-report form button:hover{
-    background: #04054d;
-    box-shadow: 5px 10px 30px rgba(100, 143, 224, 0.911);
-    transition: all ease 0.4s;
+.link-report form button:hover {
+  background: #04054d;
+  box-shadow: 5px 10px 30px rgba(100, 143, 224, 0.911);
+  transition: all ease 0.4s;
 }
-  
-.link-report form button:active{
-    border:0;
+
+.link-report form button:active {
+  border: 0;
 }
 
 /* Footer */
 footer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 5%;
-    border-top: 2px solid rgba(167, 167, 167, 0.2);
-    background-color: #4a4cf6;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5%;
+  border-top: 2px solid rgba(167, 167, 167, 0.2);
+  background-color: #4a4cf6;
 }
 
 footer a,
 footer p {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+/* Responsive */
+@media only screen and (max-width: 902px) {
+  .link-report {
+    margin: 25% 4% 10% 4%;
+    text-align: center;
+  }
+
+  .link-report form button {
+    margin-top: 1rem;
+    margin-left: 5%;
+  }
+
+  .image-report h5 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  header h1 {
+    font-size: 3rem;
+  }
 }
