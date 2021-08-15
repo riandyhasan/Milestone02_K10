@@ -199,6 +199,26 @@ header h1 {
   border: 0;
 }
 
+.button-scan2 {
+  text-align: center;
+  color: #4a4cf6;
+  background: transparent;
+  border: 5px solid #4a4cf6;
+  width: 120px;
+  height: 45px;
+  margin-top: 15px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.button-scan2:hover {
+  background: #4a4cf6;
+  color: #fff;
+  box-shadow: 5px 10px 30px rgba(100, 143, 224, 0.911);
+  transition: all ease 0.4s;
+}
+
 /* Report link 8 */
 .teks-input {
   margin: 0% 4% 5% 4%;
@@ -211,6 +231,29 @@ header h1 {
   box-sizing: border-box;
   border-radius: 15px;
   height: 250px;
+}
+
+/* Modal */
+.modal-container {
+  background: #f8faff;
+  border: 3px solid #8fbfff;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 5rem 1rem 5rem 1rem;
+}
+
+.modal-container p {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.hoax {
+  color: #ff0000;
+}
+
+.fakta {
+  color: #00ff38;
 }
 
 /* Footer */
