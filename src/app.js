@@ -10,6 +10,9 @@ formText.onsubmit = function (event) {
 
   fetch("https://api.detax.org/detax/v1/scan_text", {
     method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
     body: body,
   })
     .then((res) => res.json())
