@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:wght@500;600;700&display=swap" rel="stylesheet" />
 
-    <title>Report Hoax</title>
+    <title>Baso - Report Hoax</title>
   </head>
 
   <body>
@@ -38,11 +38,12 @@
 
     <!-- Report Gambar -->
     <div class="image-report">
-      <h5><strong>Laporkan gambar</strong></h5><br>
+      <h5><strong>Laporkan gambar</strong></h5>
+      <br />
       <form id="reportImage" enctype="multipart/form-data" method="POST">
         <div class="drop-zone">
           <div class="drop-zone__prompt">Drop file here / click to upload</div>
-          <input type="file" name="imagereport" class="drop-zone__input" id="reportFile">
+          <input type="file" name="imagereport" class="drop-zone__input" id="reportFile" />
         </div>
         <button type="submit" form="reportImage">Report</button>
       </form>
@@ -54,8 +55,7 @@
         <label for="linkreport"
           ><h5><strong>Laporkan artikel</strong></h5></label
         ><br /><br />
-        <textarea id="formReportText" name="linkreport" class="teks-scan form-control"
-          placeholder="Input text to report"></textarea>
+        <textarea id="formReportText" name="linkreport" class="teks-scan form-control" placeholder="Input text to report"></textarea>
         <button type="submit">Report</button>
       </form>
     </div>
