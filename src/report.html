@@ -39,22 +39,23 @@
     <!-- Report Gambar -->
     <div class="image-report">
       <h5><strong>Laporkan gambar</strong></h5><br>
-      <form  method="POST">
+      <form id="reportImage" enctype="multipart/form-data" method="POST">
         <div class="drop-zone">
           <div class="drop-zone__prompt">Drop file here / click to upload</div>
-          <input type="file" multiple name="imagereport" class="drop-zone__input">
+          <input type="file" name="imagereport" class="drop-zone__input" id="reportFile">
         </div>
-        <button type="submit">Report</button>
+        <button type="submit" form="reportImage">Report</button>
       </form>
     </div>
 
     <!-- Report Link -->
     <div class="link-report">
-      <form action="/action_page.php">
+      <form id="reportText">
         <label for="linkreport"
-          ><h5><strong>Laporkan artikel atau akun</strong></h5></label
+          ><h5><strong>Laporkan artikel</strong></h5></label
         ><br /><br />
-        <input type="url" id="linkreport" name="linkreport" placeholder="Input direct link to article or profile account" />
+        <textarea id="formReportText" name="linkreport" class="teks-scan form-control"
+          placeholder="Input text to report"></textarea>
         <button type="submit">Report</button>
       </form>
     </div>
