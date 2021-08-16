@@ -45,7 +45,7 @@
           <div class="drop-zone__prompt">Drop file here / click to upload</div>
           <input type="file" name="imagereport" class="drop-zone__input" id="reportFile" />
         </div>
-        <button type="submit" form="reportImage">Report</button>
+        <button type="submit" form="reportImage" data-bs-toggle="modal" data-bs-target="#terimakasih">Report</button>
       </form>
     </div>
 
@@ -56,8 +56,19 @@
           ><h5><strong>Laporkan artikel</strong></h5></label
         ><br /><br />
         <textarea id="formReportText" name="linkreport" class="teks-report form-control" placeholder="Input text to report"></textarea>
-        <button type="submit">Report</button>
+        <button type="submit" data-bs-toggle="modal" data-bs-target="#terimakasih">Report</button>
       </form>
+    </div>
+
+    <div id="terimakasih" class="modal fade" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-container modal-content">
+          <p>Terima kasih telah melaporkan konten hoaks</p>
+          <div>
+            <button id="Kembali" class="button-scan" data-bs-dismiss="modal">Kembali</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="assets/js/report.js"></script>

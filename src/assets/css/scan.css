@@ -231,6 +231,26 @@ header h1 {
   transition: all ease 0.4s;
 }
 
+.button-modal {
+  text-align: center;
+  color: #fff;
+  background: #4a4cf6;
+  border: none;
+  width: 120px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  outline: none;
+  padding: 0.6rem;
+}
+
+.button-modal:hover {
+  background: #fff;
+  padding: 0.3rem;
+  border: 5px solid #4a4cf6;
+  transition: all ease 0.4s;
+  color: #4a4cf6;
+}
+
 /* Report link 8 */
 .teks-input {
   margin: 0% 4% 5% 4%;

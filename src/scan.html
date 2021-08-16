@@ -62,7 +62,7 @@
               <div class="drop-zone__prompt">Drop file here / click to upload</div>
               <input type="file" id="inputFiles" class="drop-zone__input" />
             </div>
-            <button type="submit" form="formImage" class="button-scan">Scan</button>
+            <button type="submit" form="formImage" class="button-scan" data-bs-toggle="modal" data-bs-target="#lapor">Scan</button>
           </form>
         </div>
       </div>
@@ -74,7 +74,7 @@
               ><h5><strong>Teks</strong></h5></label
             ><br /><br />
             <textarea id="formTextContent" class="teks-scan form-control" placeholder="Tulis atau paste teks yang ingin diperiksa ..."></textarea>
-            <button type="submit" form="formText" class="button-scan">Scan</button>
+            <button type="submit" form="formText" class="button-scan" data-bs-toggle="modal" data-bs-target="#lapor">Scan</button>
           </form>
         </div>
       </div>
@@ -86,7 +86,7 @@
         <div class="modal-container modal-content">
           <p>Konten tidak ada di database. Apakah Anda ingin melaporkan?</p>
           <div>
-            <button id="Ya" class="button-scan" href="report.html">Ya</button>
+            <a id="Ya" class="button-modal btn" href="report.html">Ya</a>
             <button id="Tidak" class="button-scan2" data-bs-dismiss="modal">Tidak</button>
           </div>
         </div>

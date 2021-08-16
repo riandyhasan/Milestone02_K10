@@ -198,6 +198,44 @@ header h1 {
   border: 0;
 }
 
+/* Modal */
+.modal-container {
+  background: #f8faff;
+  border: 3px solid #8fbfff;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 5rem 1rem 5rem 1rem;
+}
+
+.modal-container p {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.button-scan {
+  text-align: center;
+  color: #fff;
+  background: #4a4cf6;
+  border: none;
+  width: 120px;
+  height: 45px;
+  margin-top: 15px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.button-scan:hover {
+  background: #04054d;
+  box-shadow: 5px 10px 30px rgba(100, 143, 224, 0.911);
+  transition: all ease 0.4s;
+}
+
+.button-scan:active {
+  border: 0;
+}
+
 /* Footer */
 footer {
   width: 100%;
