@@ -24,9 +24,15 @@ formText.onsubmit = function (event) {
 const formImage = document.getElementById("formImage");
 formImage.onsubmit = function (event) {
   event.preventDefault();
+  const inputFiles = document.getElementById("inputFiles")
+  
+  let form = new FormData
+  form.append("detail", "1")
+  form.append("file", inputFiles.files[0])
+
   fetch("https://api.detax.org/detax/v1/scan_image", {
     method: "POST",
-    body: new FormData(formImage),
+    body: form,
   })
     .then((res) => res.json())
     .then((res) => console.log(res))
