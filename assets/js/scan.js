@@ -1,3 +1,4 @@
+// drag and drop file
 document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
   const dropZoneElement = inputElement.closest(".drop-zone");
 
@@ -70,81 +71,43 @@ function updateThumbnail(dropZoneElement, file) {
   }
 }
 
-const formImage = document.getElementById("reportImage");
-formImage.onsubmit = async function (event) {
-  event.preventDefault();
-  const inputFiles = document.getElementById("reportFile");
-
-  let form = new FormData();
-  form.append("detail", "1");
-  form.append("file", inputFiles.files[0]);
-
-  try {
-    // Check hoax dahulu
-    let response = await fetch("https://api.detax.org/detax/v1/scan_image", {
-      method: "POST",
-      body: form,
-    });
-    response = await response.json();
-
-    const body = {
-      classification: response.result.scan_result,
-      description: "",
-      image_url: "",
-      refs: [],
-      report_id: response.result.report_id,
-    };
-
-    // Kalau hoax, kirim report
-    if (body.classification !== 1) {
-      response = await fetch("https://api.detax.org/detax/v1/report/image", {
-        method: "POST",
-        body: JSON.stringify(body),
-      });
-      response = await response.json();
-      console.log(response);
-    } else {
-      // Kalau tidak hoax jangan kirim report
-      console.log("Ini fakta");
-    }
-  } catch (error) {
-    console.log(error);
-  }
-};
-
-const formText = document.getElementById("reportText");
-const formTextContent = document.getElementById("formReportText");
-formText.onsubmit = async function (event) {
+// Scan by text
+const formText = document.getElementById("formText");
+const formTextContent = document.getElementById("formTextContent");
+formText.onsubmit = function (event) {
   event.preventDefault();
   const body = JSON.stringify({
     text: formTextContent.value,
     detail: 1,
   });
 
-  try {
-    let response = await fetch("https://api.detax.org/detax/v1/scan_text", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: body,
-    });
-    response = await response.json();
+  fetch("https://api.detax.org/detax/v1/scan_text", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: body,
+  })
+    .then((res) => res.json())
+    .then((res) => console.log(res))
+    .catch((err) => console.log(err));
+};
 
-    if (response.result.scan_result !== 1) {
-      response = await fetch("https://api.detax.org/detax/v1/report/text", {
-        method: "POST",
-        body: JSON.stringify({
-          text: formTextContent.value,
-          classification: response.result.scan_result,
-          description: "",
-          refs: [],
-        }),
-      });
-      response = await response.json();
-      console.log(response);
-    }
-  } catch (error) {
-    console.log(error);
-  }
+// Scan by image uploaded
+const formImage = document.getElementById("formImage");
+formImage.onsubmit = function (event) {
+  event.preventDefault();
+  const inputFiles = document.getElementById("inputFiles");
+
+  let form = new FormData();
+  form.append("detail", "1");
+  form.append("file", inputFiles.files[0]);
+
+  fetch("https://api.detax.org/detax/v1/scan_image", {
+    method: "POST",
+    body: form,
+  })
+    .then((res) => res.json())
+    .then((res) => console.log(res))
+    .catch((err) => console.log(err));
 };

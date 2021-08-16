@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:wght@500;600;700&display=swap" rel="stylesheet" />
 
-    <title>Report Hoax</title>
+    <title>Baso - Report Hoax</title>
   </head>
 
   <body>
@@ -38,25 +38,37 @@
 
     <!-- Report Gambar -->
     <div class="image-report">
-      <h5><strong>Laporkan gambar</strong></h5><br>
-      <form action="upload.php" method="POST">
+      <h5><strong>Laporkan gambar</strong></h5>
+      <br />
+      <form id="reportImage" enctype="multipart/form-data" method="POST">
         <div class="drop-zone">
           <div class="drop-zone__prompt">Drop file here / click to upload</div>
-          <input type="file" multiple name="imagereport" class="drop-zone__input">
+          <input type="file" name="imagereport" class="drop-zone__input" id="reportFile" />
         </div>
-        <button type="submit">Report</button>
+        <button type="submit" form="reportImage" data-bs-toggle="modal" data-bs-target="#terimakasih">Report</button>
       </form>
     </div>
 
     <!-- Report Link -->
     <div class="link-report">
-      <form action="/action_page.php">
+      <form id="reportText">
         <label for="linkreport"
-          ><h5><strong>Laporkan artikel atau akun</strong></h5></label
+          ><h5><strong>Laporkan artikel</strong></h5></label
         ><br /><br />
-        <input type="url" id="linkreport" name="linkreport" placeholder="Input direct link to article or profile account" />
-        <button type="submit">Report</button>
+        <textarea id="formReportText" name="linkreport" class="teks-report form-control" placeholder="Input text to report"></textarea>
+        <button type="submit" data-bs-toggle="modal" data-bs-target="#terimakasih">Report</button>
       </form>
+    </div>
+
+    <div id="terimakasih" class="modal fade" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-container modal-content">
+          <p>Terima kasih telah melaporkan konten hoaks</p>
+          <div>
+            <button id="Kembali" class="button-scan" data-bs-dismiss="modal">Kembali</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="assets/js/report.js"></script>

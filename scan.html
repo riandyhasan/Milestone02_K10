@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:wght@500;600;700&display=swap" rel="stylesheet" />
 
-    <title>Scan</title>
+    <title>Baso - Scan</title>
   </head>
 
   <body>
@@ -58,9 +58,11 @@
           <h5><strong>Gambar</strong></h5>
           <br />
           <form id="formImage" classname="form-scan" method="POST" enctype="multipart/form-data">
-            <input type="file" multiple />
-            <div class="boxbackground">Drag and drop / click to upload</div>
-            <button type="submit" form="formImage" class="button-scan">Scan</button>
+            <div class="drop-zone">
+              <div class="drop-zone__prompt">Drop file here / click to upload</div>
+              <input type="file" id="inputFiles" class="drop-zone__input" />
+            </div>
+            <button type="submit" form="formImage" class="button-scan" data-bs-toggle="modal" data-bs-target="#lapor">Scan</button>
           </form>
         </div>
       </div>
@@ -72,7 +74,7 @@
               ><h5><strong>Teks</strong></h5></label
             ><br /><br />
             <textarea id="formTextContent" class="teks-scan form-control" placeholder="Tulis atau paste teks yang ingin diperiksa ..."></textarea>
-            <button type="submit" form="formText" class="button-scan">Scan</button>
+            <button type="submit" form="formText" class="button-scan" data-bs-toggle="modal" data-bs-target="#lapor">Scan</button>
           </form>
         </div>
       </div>
@@ -84,7 +86,7 @@
         <div class="modal-container modal-content">
           <p>Konten tidak ada di database. Apakah Anda ingin melaporkan?</p>
           <div>
-            <button id="Ya" class="button-scan" href="report.html">Ya</button>
+            <a id="Ya" class="button-modal btn" href="report.html">Ya</a>
             <button id="Tidak" class="button-scan2" data-bs-dismiss="modal">Tidak</button>
           </div>
         </div>
@@ -114,7 +116,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script src="assets/js/scan.js"></script>
   </body>
 
   <!-- Footer -->
